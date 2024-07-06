@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CricPlus: Cricket Player Performance Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Indian Cricket Player Performance Prediction</h1>
+        <h2>Indian Criket Team</h2>
+        <div class="description">
+            <div class="rankings">
+                <h2>Tests</h2>
+                <table>
+                    <tr>
+                        <th>Ranking</th>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="rankings">
+                <h2>ODIs</h2>
+                <table>
+                    <tr>
+                        <th>Ranking</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="rankings">
+                <h2>T20Is</h2>
+                <table>
+                    <tr>
+                        <th>Ranking</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <form id="prediction-form">
+            <label for="type">Select Type:</label>
+            <select id="type" name="type" required>
+                <option value="bowler">Bowler</option>
+                <option value="batsman">Batsman</option>
+            </select><br><br>
+
+            <label for="player-name">Player Name:</label>
+            <input type="text" list="players" id="player-name" name="player-name" required>
+            <datalist id="players">
+                <!-- Options will be populated dynamically -->
+            </datalist><br><br>
+
+            <label for="opposition">Opposition:</label>
+            <input type="text" id="opposition" name="opposition" list="oppositionList" required><br><br>
+            <datalist id="oppositionList">
+                <!-- Options will be dynamically loaded here -->
+            </datalist>
+
+            <label for="venue">Venue:</label>
+            <input type="text" id="venue" name="venue" list="venueList" required><br><br>
+            <datalist id="venueList">
+                <!-- Options will be populated dynamically -->
+            </datalist>
+
+            <label for="match-type">Match Type:</label>
+            <input type="text" id="match-type" name="match-type" list="matchTypeList" required><br><br>
+            <datalist id="matchTypeList">
+                <option value="Test">
+                <option value="ODI">
+                <option value="T20I">
+            </datalist>
+            <button type="submit">Predict</button>
+        </form>
+
+        <h2 id="prediction-result"></h2>
+    </div>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+</body>
+
+</html>
