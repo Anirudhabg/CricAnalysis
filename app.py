@@ -5,7 +5,7 @@ from sklearn.preprocessing import LabelEncoder
 from flask import Flask, request, jsonify, render_template
 
 # Load bowlers dataset
-bowlers_data = pd.read_excel('bowlers.xlsx')
+bowlers_data = pd.read_csv('Datasets/bowlers.csv')
 
 # Handling non-numeric values in the dataset
 bowlers_data = bowlers_data.replace('-', 0)  # Replace '-' with 0, assuming it represents missing or undefined data
@@ -30,7 +30,7 @@ bowlers_model.fit(X_train_bowlers, y_train_bowlers)
 print("Bowlers Model Score:", bowlers_model.score(X_test_bowlers, y_test_bowlers))
 
 # Load batsmen dataset
-batsmen_data = pd.read_csv('batsman.csv')
+batsmen_data = pd.read_csv('Datasets/batsman.csv')
 
 # Handling non-numeric values in the dataset
 batsmen_data = batsmen_data.replace('-', 0)  # Replace '-' with 0, assuming it represents missing or undefined data
