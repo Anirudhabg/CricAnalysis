@@ -47,5 +47,5 @@ CricAnalysis uses a manually curated dataset, sourced from ESPN CricInfo, contai
    Open your web browser and go to `http://127.0.0.1:5000/` to access the CricAnalysis application. You can use the web interface to predict the future runs or wickets of Indian cricketers.
 
 ### Images
-    Batsmen Prediction: [Rishab Pant]()
-    Bowler Prediction: [Jasprit Bumrah]()
+   Batsmen Prediction: [Rishab Pant](https://github.com/Anirudhabg/CricAnalysis/blob/3a7ac971a903d3473b046422e6dab3076ae34ba0/Images/Batsmen_Prediction.png)
+   Bowler Prediction: [Jasprit Bumrah](https://github.com/Anirudhabg/CricAnalysis/blob/3a7ac971a903d3473b046422e6dab3076ae34ba0/Images/Bowler_Prediction.png)
