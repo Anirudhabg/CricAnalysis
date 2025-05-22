@@ -1,56 +1,115 @@
-# CricAnalysis
+# 🏏 CricAnalysis
 
-**CricAnalysis** is a machine learning project focused on predicting the future performance of Indian cricketers. The project leverages historical data to forecast key metrics such as runs scored and wickets taken by players in upcoming matches.
+**CricAnalysis** is a machine learning-based web application that predicts the **future performance of Indian cricketers**. By analyzing historical data, the platform forecasts **runs scored** and **wickets taken** by players in upcoming matches — offering valuable insights for cricket fans, analysts, and strategists.
 
-## Project Overview
+---
 
-CricAnalysis uses a manually curated dataset, sourced from ESPN CricInfo, containing detailed information on the past performances of currently active Indian cricketers. This data serves as the foundation for training the machine learning models that predict future player performances.
+## 📌 Project Overview
 
-### Key Features
+CricAnalysis leverages a **custom-built dataset**, meticulously compiled from ESPN CricInfo, to power predictive models. These models assess a player’s past performance to forecast likely outcomes in future games.
 
-- **Prediction Models**: The project includes models that predict the runs a player will score or the number of wickets they will take in future matches.
-- **Custom Dataset**: The dataset used for this project is manually created, ensuring accuracy and relevance by focusing on the most impactful metrics.
-- **Data-Driven Insights**: By analyzing past performances, CricAnalysis provides insights that can help in strategic decision-making for team selection and match preparation.
+### 🔍 Key Features
 
-### Technologies Used
+* 📈 **Prediction Models**: Predict future **runs scored** by batsmen and **wickets taken** by bowlers using trained ML models.
+* 🧠 **Custom Dataset**: Cleaned and structured datasets built manually to ensure data quality and relevance.
+* 📊 **Data Insights**: Useful for analysis, team selection strategies, and enhancing match-day predictions.
+* 🌐 **User Interface**: Simple web app interface built using Flask.
 
-- **Machine Learning**: Various machine learning algorithms are used to build and optimize predictive models.
-- **Data Collection**: The dataset is compiled manually from ESPN CricInfo, focusing on the performances of Indian cricketers.
-- **Python**: The core language used for data processing, model training, and prediction.
-- **Libraries**: Key libraries include Pandas for data manipulation, Scikit-learn for machine learning, and Matplotlib for visualization.
+---
 
-## How to Use
+## 🛠️ Technologies Used
 
-1. **Clone the Repository**  
-   Start by cloning the repository to your local machine using the following command:
+| Category             | Tools / Libraries               |
+| -------------------- | ------------------------------- |
+| **Languages**        | Python, HTML, CSS, JavaScript   |
+| **Framework**        | Flask                           |
+| **Machine Learning** | Scikit-learn                    |
+| **Data Handling**    | Pandas, NumPy                   |
+| **Visualization**    | Matplotlib, Seaborn             |
+| **Frontend**         | Bootstrap (via CSS), JavaScript |
+| **Deployment-ready** | Localhost via Flask             |
 
-   ```bash
-   git clone https://github.com/Anirudhabg/CricAnalysis.git
-   cd CricAnalysis
-   ```
+---
 
-2. **Install the Required Dependencies**  
-   Ensure you have Python installed on your system. Then, install the necessary dependencies using the `requirements.txt` file:
+## 📂 Project Structure
 
-   ```bash
-   pip install -r requirements.txt
-   ```
+```
+CricAnalysis/
+│
+├── app.py                      # Main Flask application
+│
+├── datasets/
+│   ├── batsman.csv             # Historical performance of Indian batsmen
+│   └── bowlers.csv             # Historical performance of Indian bowlers
+│
+├── static/
+│   ├── css/                    # CSS styling files
+│   ├── js/                     # JavaScript files
+│   └── images/                 # Image assets (prediction charts, icons)
+│
+├── templates/
+│   └── index.html              # Main UI template for the web app
+│
+├── requirements.txt            # Python dependencies
+└── README.md                   # Project documentation
+```
 
-3. **Run the Application**  
-   After installing the dependencies, you can run the Flask application:
+---
 
-   ```bash
-   python app.py
-   ```
+## 📈 Datasets
 
-4. **Access the Application**  
-   Open your web browser and go to `http://127.0.0.1:5000/` to access the CricAnalysis application. You can use the web interface to predict the future runs or wickets of Indian cricketers.
+* **`batsman.csv`**: Contains historical performance metrics of Indian batsmen (e.g., runs, opposition, venue, match type).
+* **`bowlers.csv`**: Contains historical bowling performance (e.g., wickets, economy, match type, ground).
 
-### Images
-   Batsmen Prediction: [Rishab Pant](https://github.com/Anirudhabg/CricAnalysis/blob/3a7ac971a903d3473b046422e6dab3076ae34ba0/Images/Batsmen_Prediction.png)
+---
 
-   Bowler Prediction: [Jasprit Bumrah](https://github.com/Anirudhabg/CricAnalysis/blob/3a7ac971a903d3473b046422e6dab3076ae34ba0/Images/Bowler_Prediction.png)
+## 🚀 Getting Started
 
-## License
+### 1. Clone the Repository
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+```bash
+git clone https://github.com/Anirudhabg/CricAnalysis.git
+cd CricAnalysis
+```
+
+### 2. Install Dependencies
+
+Ensure you have Python installed. Then install all required packages:
+
+```bash
+pip install -r requirements.txt
+```
+
+### 3. Run the Flask Application
+
+```bash
+python app.py
+```
+
+### 4. View the Web App
+
+Open your browser and navigate to:
+
+```
+http://127.0.0.1:5000/
+```
+
+You’ll be able to:
+
+* Predict **runs** scored by batsmen.
+* Predict **wickets** taken by bowlers.
+
+---
+
+## 🖼️ Sample Predictions
+<table> <tr> <td align="center"> <strong>Batsman Prediction (Rishabh Pant)</strong><br> <img src="https://github.com/Anirudhabg/CricAnalysis/blob/3a7ac971a903d3473b046422e6dab3076ae34ba0/Images/Batsmen_Prediction.png" width="400"/> </td> <td align="center"> <strong>Bowler Prediction (Jasprit Bumrah)</strong><br> <img src="https://github.com/Anirudhabg/CricAnalysis/blob/3a7ac971a903d3473b046422e6dab3076ae34ba0/Images/Bowler_Prediction.png" width="400"/> </td> </tr> </table>
+
+---
+
+## 📄 License
+
+This project is licensed under the **MIT License**.
+See the [LICENSE](LICENSE) file for more details.
+
+---
+> Crafted by Anirudha B G Somayaji
